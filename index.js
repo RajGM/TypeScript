@@ -68,3 +68,50 @@ const t1 = {
     }
 };
 console.log(t1);
+function pow(x, y) {
+    return Math.pow(x, y);
+}
+function voidReturn(x, y) {
+    console.log(`x:${x} y:${y}`);
+    console.log("This function returns void");
+}
+console.log(pow(4, 5));
+voidReturn("Anthing is fine", 1234);
+const arrNumber = [];
+arrNumber.push(2);
+arrNumber.push(4);
+arrNumber.push(5);
+console.log(arrNumber);
+const testerArray = [];
+testerArray.push(t1);
+console.log(testerArray);
+const customArray = [123, false];
+console.log(customArray);
+class Observable {
+    value;
+    constructor(value) {
+        this.value = value;
+    }
+}
+let x;
+console.log("typeof x:" + typeof x);
+let z = new Observable(12);
+console.log("z:", z);
+function getLength(obj) {
+    return obj.length;
+}
+console.log(getLength("String1"));
+console.log(getLength(["S1", "S2", "S3"]));
+function wrapInArray(obj) {
+    if (typeof obj === "string") {
+        return [obj];
+    }
+    return obj;
+}
+console.log(wrapInArray("StringTEST"));
+console.log(wrapInArray(["S1", "S2", "3", "S4"]));
+let arrayObj = [];
+let stringArray = [];
+stringArray = ["Ele1", "Ele2", "Ele3"];
+arrayObj.push("stringArray");
+console.log(arrayObj);
